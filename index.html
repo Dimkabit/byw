@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css?_v=20230925190011" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230925190011">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230925190011"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="js/scroll.js" defer></script>
+	<script src="js/scrollRiv.js" defer></script>
+	<style>
+/* Apply the animation class initially */
+.page-block.animate-up .content-section {
+    animation: disperse-up-left 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+.page-block.animate-up .hero__images {
+    animation: disperse-up-right 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+/* Define animation keyframes for dispersing elements along the radius of an ellipse */
+@keyframes disperse-up-left {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-200px, -200px);
+        opacity: 0;
+    }
+}
+
+@keyframes disperse-up-right {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(200px, -200px);
+        opacity: 0;
+    }
+}
+
+/* Define animation keyframes for reappearing elements */
+@keyframes reappear {
+    0% {
+        transform: translate(-200px, -200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+}
+@keyframes reappear1 {
+    0% {
+        transform: translate(200px, -200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+	}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<main class="page">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#marketplace" class="menu__link active-link">MARKETPLACE</a></li>
+								<li class="menu__item"><a href="#reserving" class="menu__link">RESERVING</a></li>
+								<li class="menu__item"><a href="#brokering" class="menu__link">BROKERING</a></li>
+							</ul>
+						</nav>
+						<form name='test_form'>
+							<input type="text" hidden name="country" id="country" value="Russia">
+
+
+							<div class="select">
+								<div class="current-value">
+									<div class="value-wrap">
+										<span>RU</span>
+										<img src="img/flags/Russia.png">
+
+									</div>
+
+									<div id="deploy-btn" class="button-arrow">
+										<i class="ri-arrow-down-s-line"></i>
+									</div>
+								</div>
+								<div class="options-list" style="z-index: 10;">
+									<div class="option current">
+										<span>RU</span>
+										<img src="img/flags/Russia.png">
+
+									</div>
+
+									<div class="option">
+										<span>DE</span>
+										<img src="img/flags/Germany.png">
+
+									</div>
+
+									<div class="option">
+										<span>FR</span>
+										<img src="img/flags/France.png">
+
+									</div>
+
+									<div class="option">
+										<span>SE</span>
+										<img src="img/flags/Switzerland.png">
+
+									</div>
+									<div class="option">
+										<span>ESP</span>
+										<img src="img/flags/Spain.png">
+
+									</div>
+									<div class="option">
+										<span>UK</span>
+										<img src="img/flags/Unitedkingdom.png">
+
+									</div>
+
+								</div>
+							</div>
+
+							<br>
+						</form>
+						<button type="button" class="menu__icon icon-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+
+					</div>
+				</div>
+			</header>
+			<div class="page__container">
+				<div class="page-block">
+					<div class="hero__content">
+						<div class="hero__content-section">
+							<div class="content-section">
+								<h1 class="content-section__title ">
+									Not only people <br> need a house
+
+								</h1>
+								<p class="content-section__text ">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum molestiae facilis necessitatibus commodi quaerat quos vitae. Dicta repudiandae natus totam enim dolores fugiat laborum rem velit magnam explicabo, doloremque neque?
+								</p>
+								<button type="button" class="content-section__batton ">
+									<a href="#"><span>More</span></a>
+								</button>
+							</div>
+						</div>
+						<div class="hero__images ibg ">
+							<img class="hero__image img" src="img/02-1.jpg" alt="puppy-start">
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<section class="spikes"></section>
+
+		<section class="text-block">
+			<div class="text-block__container">
+				<h3 class="text-block__title">
+					Lorem ipsum title amet consectetur adipisicing elit.
+				</h3>
+				<p class="text-block__text">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, necessitatibus maiores. Quasi ea incidunt, sit repudiandae blanditiis repellat. Facere unde modi excepturi magni. Beatae aut maiores molestias aperiam alias dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quas cupiditate at rem, laborum voluptatem! Quaerat in sapiente voluptatum obcaecati repellat, rem labore illo ipsam?
+				</p>
+				<p class="text-block__text">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, necessitatibus maiores. Quasi ea incidunt, sit repudiandae blanditiis repellat. Facere unde modi excepturi magni. Beatae aut maiores molestias aperiam alias dolores? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eaque consequuntur natus! Tenetur, consectetur quaerat magnam culpa consequatur, necessitatibus praesentium molestiae magni libero distinctio dolorum nobis sapiente, nesciunt at beatae cum suscipit quae deleniti eos laboriosam aut officiis expedita repudiandae quia? Ad eius magni esse laborum laudantium accusamus consectetur error alias, doloribus qui placeat! Ea laborum sint odit voluptas deserunt.
+				</p>
+			</div>
+		</section>
+		<section class="image-block">
+			<div class="image-block__container">
+				<div class="image-block__content">
+					<div class="image-block__image ibg">
+						<img class="image-block__image img" src="img/03.jpg" alt="puppy-start">
+					</div>
+					<div class="image-block__content-section">
+
+						<div class="image-block-content-section">
+							<h3 class="image-block-content-section__title">
+								Lorem ipsum dolor sit amet.
+							</h3>
+							<p class="image-block-content-section__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum molestiae facilis necessitatibus commodi quaerat quos vitae. Dicta repudiandae natus totam enim dolores fugiat laborum rem velit magnam explicabo, doloremque neque?
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eum quisquam molestias, possimus fugiat delectus dolorem nobis a est sit optio quibusdam. Iure officiis nostrum sed nihil amet fugiat! Ex obcaecati rem dolor quo necessitatibus nesciunt quae, quia optio nam ducimus, commodi neque sed laudantium debitis minus exercitationem asperiores libero in. Voluptatem doloribus obcaecati qui alias tenetur ea, consequuntur accusamus?
+							</p>
+							<p class="image-block-content-section__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum molestiae facilis necessitatibus commodi quaerat quos vitae. Dicta repudiandae natus totam enim dolores fugiat laborum rem velit magnam explicabo, doloremque neque?
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eum quisquam molestias, possimus fugiat delectus dolorem nobis a est sit optio quibusdam. Iure officiis nostrum sed nihil amet fugiat! Ex obcaecati rem dolor quo necessitatibus nesciunt quae, quia optio nam ducimus, commodi neque sed laudantium debitis minus exercitationem asperiores libero in. Voluptatem doloribus obcaecati qui alias tenetur ea, consequuntur accusamus?
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="image-block-slider">
+					<div class="image-block-slider__title">Lorem ipsum dolor sit amet.</div>
+					<div class="image-block-slider-block">
+						<div class="image-block-slider-block__slider swiper">
+							<div class="image-block-slider-block__wrapper swiper-wrapper">
+								<div class="image-block-slider-block__slide swiper-slide">
+									<div class="slader-card">
+										<div class="slaider-card__title">Lorem, ipsum dolor.</div>
+										<div class="slider-card__text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur explicabo atque quas. Libero molestiae, dolor nihil expedita aperiam eos sunt voluptas impedit est distinctio vitae commodi inventore facere exercitationem iste voluptate iure obcaecati id porro eum totam rem ducimus delectus!
+										</div>
+									</div>
+								</div>
+								<div class="image-block-slider-block__slide swiper-slide">
+									<div class="slader-card">
+										<div class="slaider-card__title">Lorem, ipsum dolor.</div>
+										<div class="slider-card__text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur explicabo atque quas. Libero molestiae, dolor nihil expedita aperiam eos sunt voluptas impedit est distinctio vitae commodi inventore facere exercitationem iste voluptate iure obcaecati id porro eum totam rem ducimus delectus!
+										</div>
+									</div>
+								</div>
+								<div class="image-block-slider-block__slide swiper-slide">
+									<div class="slader-card">
+										<div class="slaider-card__title">Lorem, ipsum dolor.</div>
+										<div class="slider-card__text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur explicabo atque quas. Libero molestiae, dolor nihil expedita aperiam eos sunt voluptas impedit est distinctio vitae commodi inventore facere exercitationem iste voluptate iure obcaecati id porro eum totam rem ducimus delectus!
+										</div>
+									</div>
+								</div>
+								<div class="image-block-slider-block__slide swiper-slide">
+									<div class="slader-card">
+										<div class="slaider-card__title">Lorem, ipsum dolor.</div>
+										<div class="slider-card__text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur explicabo atque quas. Libero molestiae, dolor nihil expedita aperiam eos sunt voluptas impedit est distinctio vitae commodi inventore facere exercitationem iste voluptate iure obcaecati id porro eum totam rem ducimus delectus!
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+						<button type="button" class="swiper-button-prev"><i class="ri-arrow-left-s-line"></i></button>
+						<button type="button" class="swiper-button-next"><i class="ri-arrow-right-s-line"></i></button>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<section class="four">
+			<div class="four__container">
+				<div class="four-block">
+					<div class="four-block-smoll">
+						<h4>Lorem, ipsum dolor.</h4>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint dolore voluptatum ipsum aut aperiam, nostrum quo, ad quam magnam, beatae architecto incidunt aliquid! Dolore nihil molestiae quis eligendi optio reiciendis, ut obcaecati itaque dolorum placeat facere sed possimus, adipisci est at ipsum perferendis laboriosam. Facere aperiam, saepe vitae atque dolores explicabo quod quasi sequi autem sunt corporis dolorum vel ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint dolore voluptatum ipsum aut aperiam, nostrum quo, ad quam magnam, beatae architecto incidunt aliquid! Dolore nihil molestiae quis eligendi optio reiciendis, ut obcaecati itaque dolorum placeat facere sed possimus, adipisci est at ipsum perferendis laboriosam. Facere aperiam, saepe vitae atque dolores explicabo quod quasi sequi autem sunt corporis dolorum vel ab.
+
+						</p>
+					</div>
+					<div class="four-block-big">
+						<h4>Lorem, ipsum dolor.</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque?
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque?
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque?
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque?
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque?
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque?
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque?
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque?
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque?
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque?
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque?
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque?
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque?
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illo esse deserunt unde quia rem! Esse voluptatem, ex voluptatibus explicabo, quidem quisquam quasi qui ratione corrupti eum quo nulla sapiente aliquid eius dolorem, perferendis cumque?
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="spikes-footer"></section>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer-block">
+					<ul class="footer-list">
+						<li class="footer-list-title">About us</li>
+						<li><a class="footer-link" href="#">Our company</a></li>
+						<li><a class="footer-link" href="#">Careers</a></li>
+						<li><a class="footer-link" href="#">Wealthsimple Foundation</a></li>
+						<li><a class="footer-link" href="#">Giveback program</a></li>
+					</ul>
+					<ul class="footer-social-list">
+						<li><a class="footer-social-link" href="#"><i class="ri-instagram-line"></i> Instagram</a></li>
+						<li><a class="footer-social-link" href="#"><i class="ri-twitter-fill"></i> Twitter</a></li>
+						<li><a class="footer-social-link" href="#"><i class="ri-youtube-fill"></i> YouTube</a></li>
+						<li><a class="footer-social-link" href="#"><i class="ri-linkedin-box-fill"></i> LinkedIn</a></li>
+					</ul>
+				</div>
+				<div class="footer-block-bottom">
+					<p>© 2016–2023, Wealthsimple Technologies Inc. All Rights Reserved.</p>
+					<p>For further details see our Legal Disclosures. By using this website, you accept our Terms of Use and Privacy Policy.</p>
+					<p>For information about filing a complaint please visit How to File a Complaint.</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230925190011"></script>
+</body>
+
+</html>
